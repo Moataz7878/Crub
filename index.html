@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li>Index</li>
+                <li>ProductName</li>
+                <li>ProductPrice</li>
+                <li>ProductCategory</li>
+                <li>ProductDesc</li>
+                <li>Update</li>
+                <li>Delete</li>
+            </ul>
+        </div>
+        <div class="form w-50 mt-4  m-auto">
+            <h2 class="mt-3 mb-1">Product Managment System</h2>
+
+            <label for="ProductName" class="form-label">ProductName :</label>
+            <div class="position-relative w-100 ProductNameIcon">
+            <input type="text" name="ProductName" id="ProductName" class="w-100 p-2 mb-2 form-control border border-2 ">
+            <i class="fa-solid fa-check icon true" id="true" ></i>
+            <i class="fa-solid fa-xmark icon false" id="false"></i>
+        </div>
+            <label for="ProductPrice" class="form-label">ProductPrice :</label>
+            <div class="position-relative w-100 ProductPriceIcon">
+                <input type="number" name="ProductPrice" id="ProductPrice" class="w-100 p-2 mb-2 form-control border border-2">
+                <i class="fa-solid fa-check icon true" id="true" ></i>
+                <i class="fa-solid fa-xmark icon false" id="false"></i>
+            </div>
+            <label for="ProductCategory" class="form-label">ProductCategory :</label>
+            <div class="position-relative w-100 ProductCategoryIcon">
+                <input type="text" name="ProductCategory" id="ProductCategory" class="w-100 p-2 mb-2 form-control border border-2">
+                <i class="fa-solid fa-check icon true" id="true" ></i>
+                <i class="fa-solid fa-xmark icon false" id="false"></i>
+            </div>
+            <label for="ProductDesc" class="form-label">ProductDesc :</label>
+            <div class="position-relative w-100 ProductDescIcon">
+                <textarea name="ProductDesc" id="ProductDesc" class="w-100 mb-3 form-control border border-1" rows="4"></textarea>
+                <i class="fa-solid fa-check icon true" id="true" ></i>
+                <i class="fa-solid fa-xmark icon false" id="false"></i>
+            </div>
+
+            <button type="button" class="btn btn-outline-success  mt-3"   id="button">add product</button>
+            <button type="button" class="btn btn-outline-success  mt-3 m-auto"  id="UpdateDone">Update Done</button>
+
+
+        </div>
+        <div class="table mt-4 py-2 w-50 m-auto " >
+            <input type="text" placeholder="Search name" id="Search" class="p-2 w-75 mt-2 mb-4 m-auto  form-control border-2">
+            <table class="">
+                <thead>
+                    <th>Index</th>
+                    <th>ProductName</th>
+                    <th>ProductPrice</th>
+                    <th>ProductCategory</th>
+                    <th>ProductDesc</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tbody">
+                
+                </tbody>
+            </table>
+        </div>
+    </header>
+    <script src="js/index.js"></script>
+</body>
+</html>
